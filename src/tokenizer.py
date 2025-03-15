@@ -2,7 +2,7 @@ from typing import List
 
 class Tokenizer:
     def __init__(self):
-        self.chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:',.<>?/`~ \t\n\r"
+        self.chars = "abcdefghijklmnopqrstuvwxyzåäöABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ0123456789!@#$%^&*()_+-=[]{}|;:',.<>?/`~ \t\n\r"
         self.stoi = {s:i for i,s in enumerate(self.chars)}
         self.itos = {i:s for i,s in enumerate(self.chars)}
         
